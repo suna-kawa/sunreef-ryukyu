@@ -1,0 +1,86 @@
+:root {
+  /* Sun — Warm Coral Orange */
+  --color-primary:       #F07820;
+  --color-primary-mid:   #E06818;
+  --color-primary-light: #F4944A;
+  --color-primary-dark:  #C55510;
+  --color-primary-bg:    #FEF0E5;
+  --color-primary-pale:  #FFF8F2;
+
+  /* Reef — Ocean Turquoise */
+  --color-accent:        #0BBFCA;
+  --color-accent-light:  #3DD4DE;
+
+  /* Neutrals */
+  --color-white:         #FFFFFF;
+  --color-off-white:     #FAFAF8;
+  --color-gray-50:       #F4F4F2;
+  --color-gray-100:      #EBEBEA;
+  --color-gray-200:      #D8D8D6;
+  --color-gray-400:      #A0A09E;
+  --color-gray-600:      #666664;
+  --color-gray-800:      #3A3A38;
+  --color-black:         #1C1C1A;
+  --color-footer-bg:     #0C2430;
+
+  /* Typography */
+  --font-primary: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'メイリオ', sans-serif;
+
+  --text-xs:   0.75rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-lg:   1.125rem;
+  --text-xl:   1.375rem;
+  --text-2xl:  1.75rem;
+  --text-3xl:  2.25rem;
+  --text-4xl:  3rem;
+  --text-hero: 3.5rem;
+
+  --weight-regular: 400;
+  --weight-medium:  500;
+  --weight-bold:    700;
+  --weight-black:   900;
+
+  --leading-tight:  1.2;
+  --leading-snug:   1.4;
+  --leading-normal: 1.7;
+  --leading-loose:  2.0;
+
+  /* Spacing */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* Borders */
+  --radius-sm:  4px;
+  --radius-md:  8px;
+  --radius-lg:  16px;
+  --radius-xl:  24px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-xs: 0 1px 4px rgba(0,0,0,0.06);
+  --shadow-sm: 0 2px 10px rgba(0,0,0,0.08);
+  --shadow-md: 0 6px 24px rgba(0,0,0,0.10);
+  --shadow-lg: 0 12px 40px rgba(0,0,0,0.14);
+  --shadow-xl: 0 20px 60px rgba(0,0,0,0.18);
+
+  /* Transitions */
+  --ease-fast:   0.18s cubic-bezier(0.4,0,0.2,1);
+  --ease-normal: 0.3s cubic-bezier(0.4,0,0.2,1);
+  --ease-slow:   0.5s cubic-bezier(0.4,0,0.2,1);
+
+  /* Layout */
+  --container-max: 1200px;
+  --container-narrow: 800px;
+  --header-h: 80px;
+  --infobar-h: 0px;
+}

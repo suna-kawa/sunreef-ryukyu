@@ -1,0 +1,210 @@
+.prop-tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 2px solid var(--color-gray-100);
+  margin-bottom: var(--space-10);
+}
+
+.prop-tab {
+  padding: var(--space-3) var(--space-8);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  color: var(--color-gray-400);
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  cursor: pointer;
+  transition: color var(--ease-fast), border-color var(--ease-fast);
+  letter-spacing: 0.04em;
+}
+
+.prop-tab:hover {
+  color: var(--color-primary);
+}
+
+.prop-tab.is-active {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+  font-weight: var(--weight-bold);
+}
+
+.prop-panel {
+  display: block;
+}
+
+.prop-panel.is-hidden {
+  display: none;
+}
+
+/* Grid */
+.prop-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+}
+
+.prop-grid--2col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.prop-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-12);
+}
+
+/* Card */
+.prop-card {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-xs);
+  border: 1px solid var(--color-gray-100);
+  transition: box-shadow var(--ease-normal), transform var(--ease-normal);
+  display: flex;
+  flex-direction: column;
+}
+
+.prop-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-5px);
+}
+
+.prop-card__thumb {
+  position: relative;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  background-color: var(--color-gray-50);
+}
+
+.prop-card__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.prop-card:hover .prop-card__thumb img {
+  transform: scale(1.06);
+}
+
+.prop-card__badge {
+  position: absolute;
+  top: var(--space-3);
+  left: var(--space-3);
+}
+
+.prop-card__body {
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.prop-card__area {
+  font-size: var(--text-xs);
+  color: var(--color-gray-400);
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  margin-bottom: var(--space-2);
+}
+
+.prop-card__name {
+  font-size: var(--text-base);
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
+  margin-bottom: var(--space-3);
+  line-height: var(--leading-snug);
+}
+
+.prop-card__specs {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-4);
+}
+
+.prop-card__spec {
+  font-size: var(--text-xs);
+  color: var(--color-gray-600);
+  background: var(--color-gray-50);
+  padding: 0.2rem var(--space-2);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-gray-100);
+}
+
+.prop-card__price-wrap {
+  margin-top: auto;
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-gray-100);
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.prop-card__price {
+  font-size: var(--text-sm);
+  color: var(--color-gray-600);
+}
+
+.prop-card__price strong {
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-black);
+  color: var(--color-primary);
+}
+
+.prop-card__price-unit {
+  font-size: var(--text-xs);
+  color: var(--color-gray-400);
+}
+
+.prop-card__cta {
+  font-size: var(--text-xs);
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+}
+
+/* Filter bar (for list pages) */
+.prop-filter {
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-100);
+  border-radius: var(--radius-md);
+  padding: var(--space-5) var(--space-6);
+  margin-bottom: var(--space-8);
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.prop-filter__label {
+  font-size: var(--text-sm);
+  font-weight: var(--weight-bold);
+  color: var(--color-gray-600);
+  white-space: nowrap;
+}
+
+.prop-filter__select {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+  color: var(--color-gray-800);
+  background: var(--color-white);
+  cursor: pointer;
+  min-width: 140px;
+}
+
+.prop-count {
+  font-size: var(--text-sm);
+  color: var(--color-gray-400);
+  margin-bottom: var(--space-6);
+}
+
+.prop-count strong {
+  color: var(--color-primary);
+  font-weight: var(--weight-bold);
+}

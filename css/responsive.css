@@ -1,0 +1,261 @@
+/* ===== Tablet ≤ 1024px ===== */
+@media (max-width: 1024px) {
+  :root {
+    --text-hero: 2.75rem;
+    --text-4xl: 2.5rem;
+    --text-3xl: 2rem;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-grid {
+    gap: var(--space-10);
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer__grid > *:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .service-detail {
+    gap: var(--space-10);
+  }
+}
+
+/* ===== Mobile ≤ 768px ===== */
+@media (max-width: 768px) {
+  :root {
+    --text-hero: 2.25rem;
+    --text-4xl: 2rem;
+    --text-3xl: 1.75rem;
+    --text-2xl: 1.5rem;
+    --header-h: 64px;
+    --infobar-h: 0px;
+  }
+
+  /* Info bar hide */
+  .info-bar {
+    display: none;
+  }
+
+  /* Nav */
+  .nav-links,
+  .nav-extras,
+  .nav-cta {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-bar__inner {
+    justify-content: space-between;
+  }
+
+  /* Hero */
+  .top-hero {
+    height: 60vh;
+    min-height: 400px;
+  }
+
+  .hero-slide__actions {
+    flex-direction: column;
+    gap: var(--space-3);
+    align-items: flex-start;
+  }
+
+  .hero-scroll {
+    display: none;
+  }
+
+  /* Page hero */
+  .page-hero {
+    height: 200px;
+  }
+
+  .page-hero__title {
+    font-size: var(--text-3xl);
+  }
+
+  /* Section */
+  .section {
+    padding: var(--space-12) 0;
+  }
+
+  .sec-title {
+    font-size: var(--text-2xl);
+  }
+
+  /* About */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .about-image {
+    order: -1;
+  }
+
+  .about-image__badge {
+    display: none;
+  }
+
+  /* Services */
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-3);
+  }
+
+  .service-card {
+    padding: var(--space-6) var(--space-4);
+  }
+
+  /* Properties */
+  .prop-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .prop-grid--2col {
+    grid-template-columns: 1fr;
+  }
+
+  .prop-filter {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  /* Company */
+  .company-table th {
+    width: 110px;
+  }
+
+  .map-wrap iframe {
+    height: 300px;
+  }
+
+  /* Contact */
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .contact-form {
+    padding: var(--space-6);
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  /* Service detail */
+  .service-detail {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .service-detail--reverse {
+    direction: ltr;
+  }
+
+  /* News grid */
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Steps */
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .footer__grid > *:last-child {
+    grid-column: auto;
+  }
+
+  .footer__top {
+    padding: var(--space-10) 0 var(--space-8);
+  }
+
+  /* Portals */
+  .portals-grid {
+    gap: var(--space-3);
+  }
+
+  .portal-item {
+    width: 140px;
+    height: 60px;
+  }
+
+  /* Page top */
+  .page-top {
+    bottom: var(--space-5);
+    right: var(--space-5);
+    width: 44px;
+    height: 44px;
+  }
+
+  /* CTA banner */
+  .cta-banner__title {
+    font-size: var(--text-2xl);
+  }
+
+  .cta-banner__actions {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* ===== Small Mobile ≤ 480px ===== */
+@media (max-width: 480px) {
+  :root {
+    --text-hero: 1.875rem;
+  }
+
+  .container {
+    padding: 0 var(--space-4);
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2);
+  }
+
+  .service-card {
+    padding: var(--space-5) var(--space-3);
+    gap: var(--space-3);
+  }
+
+  .service-card__icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .company-table th,
+  .company-table td {
+    padding: var(--space-3) var(--space-4);
+    font-size: var(--text-xs);
+  }
+
+  .company-table th {
+    width: 90px;
+  }
+}
+
+/* ===== Large Desktop ≥ 1280px ===== */
+@media (min-width: 1280px) {
+  .container {
+    padding: 0 var(--space-8);
+  }
+}

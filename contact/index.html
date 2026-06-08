@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ | サンリーフ琉球</title>
+  <meta name="description" content="サンリーフ琉球へのお問い合わせ。物件に関するご質問・内覧予約・無料査定依頼はこちらからどうぞ。お電話でもお気軽にご相談ください。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/contact.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body data-page="contact">
+
+<div id="header-placeholder"></div>
+
+<section class="page-hero" style="background-image:url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1600&q=80&auto=format&fit=crop')">
+  <div class="container">
+    <div class="page-hero__inner">
+      <span class="page-hero__label">Contact</span>
+      <h1 class="page-hero__title">お問い合わせ</h1>
+      <nav class="breadcrumb" aria-label="パンくずリスト">
+        <a href="../">ホーム</a>
+        <span class="breadcrumb__sep">›</span>
+        <span class="breadcrumb__current">お問い合わせ</span>
+      </nav>
+    </div>
+  </div>
+</section>
+
+<main>
+  <section class="section" style="padding-top: var(--space-16);">
+    <div class="container container--narrow" style="max-width:960px">
+
+      <div style="text-align:center; margin-bottom:var(--space-12)" data-aos="fade-up">
+        <span class="sec-label">Contact us</span>
+        <h2 class="sec-title">お気軽にご相談ください</h2>
+        <p class="sec-desc">物件に関するご質問・内覧のご予約・査定依頼など、<br>どんなことでもお気軽にご連絡ください。</p>
+        <span class="divider"></span>
+      </div>
+
+      <div class="contact-layout" data-aos="fade-up" data-aos-delay="80">
+
+        <div class="contact-phone">
+          <div class="contact-phone__icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <p class="contact-phone__label">お電話でのお問い合わせ</p>
+          <a href="tel:098-XXX-XXXX" class="contact-phone__num">098-XXX-XXXX</a>
+          <p class="contact-phone__hours">受付時間<br>9:00〜18:00<br>（日曜・祝日定休）</p>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name" class="form-label">お名前 <span class="form-req">必須</span></label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="例：山田 太郎" required autocomplete="name">
+              <p class="form-error" id="name-error" role="alert"></p>
+            </div>
+            <div class="form-group">
+              <label for="phone" class="form-label">電話番号 <span class="form-req">必須</span></label>
+              <input type="tel" id="phone" name="phone" class="form-input" placeholder="例：098-XXX-XXXX" required autocomplete="tel">
+              <p class="form-error" id="phone-error" role="alert"></p>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">メールアドレス <span class="form-req">必須</span></label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="例：info@example.com" required autocomplete="email">
+            <p class="form-error" id="email-error" role="alert"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="category" class="form-label">お問い合わせ種別 <span class="form-req">必須</span></label>
+            <select id="category" name="category" class="form-select" required>
+              <option value="">選択してください</option>
+              <option value="rent">賃貸物件について</option>
+              <option value="sale">売買物件について</option>
+              <option value="sell">売却・買取について</option>
+              <option value="lease">賃貸管理について</option>
+              <option value="other">その他</option>
+            </select>
+            <p class="form-error" id="category-error" role="alert"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">ご要望・ご質問</label>
+            <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="ご要望やご質問をご記入ください"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary form-submit">送信する</button>
+          <p class="form-privacy">送信いただいた個人情報は、お問い合わせへの返答のみに使用いたします。</p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="footer-placeholder"></div>
+
+<script>window.SITE_ROOT = '../';</script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="../js/components.js"></script>
+<script src="../js/contact-form.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+.portals__grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.portal-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 80px;
+  border: 1px solid var(--color-gray-300);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.portal-logo:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+.portal-logo__text {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.02em;
+}
+
+.portal-logo__text--suumo {
+  color: #007B43;
+}
+
+.portal-logo__text--homes {
+  color: #E85323;
+}
+
+.portal-logo__text--athome {
+  color: #0068B7;
+}
+
+.portal-logo__text--chintai {
+  color: #E8420D;
+}
