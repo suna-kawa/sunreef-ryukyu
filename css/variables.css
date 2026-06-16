@@ -1,11 +1,11 @@
 :root {
-  /* Sun — Warm Coral Orange */
-  --color-primary:       #F07820;
-  --color-primary-mid:   #E06818;
-  --color-primary-light: #F4944A;
-  --color-primary-dark:  #C55510;
-  --color-primary-bg:    #FEF0E5;
-  --color-primary-pale:  #FFF8F2;
+  /* Sun — Muted Teal */
+  --color-primary:       #669999;
+  --color-primary-mid:   #5C8C8C;
+  --color-primary-light: #82ABAB;
+  --color-primary-dark:  #4D7A7A;
+  --color-primary-bg:    #E8F0F0;
+  --color-primary-pale:  #F4F8F8;
 
   /* Reef — Ocean Turquoise */
   --color-accent:        #0BBFCA;
