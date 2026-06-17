@@ -30,14 +30,11 @@
 }
 
 .nav-logo__mark {
-  width: 40px;
-  height: 40px;
-  background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-primary) 100%);
+  width: 50px;
+  height: auto;
+  background-color: var(--color-white);
   border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-white);
+  object-fit: contain;
   flex-shrink: 0;
 }
 
@@ -61,6 +58,7 @@
   letter-spacing: 0.1em;
   margin-top: 2px;
   font-weight: var(--weight-bold);
+  text-align: center;
 }
 
 /* ===== Nav Links ===== */
@@ -75,7 +73,7 @@
   align-items: center;
 }
 
-.nav-links__item > a {
+.nav-links__item>a {
   display: block;
   padding: 0 var(--space-3);
   height: var(--header-h);
@@ -88,7 +86,7 @@
   white-space: nowrap;
 }
 
-.nav-links__item > a::after {
+.nav-links__item>a::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -101,13 +99,13 @@
   border-radius: 2px 2px 0 0;
 }
 
-.nav-links__item > a:hover,
-.nav-links__item > a.is-active {
+.nav-links__item>a:hover,
+.nav-links__item>a.is-active {
   color: var(--color-primary);
 }
 
-.nav-links__item > a:hover::after,
-.nav-links__item > a.is-active::after {
+.nav-links__item>a:hover::after,
+.nav-links__item>a.is-active::after {
   transform: scaleX(1);
 }
 
@@ -295,11 +293,9 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(10, 25, 45, 0.35) 0%,
-    rgba(10, 25, 45, 0.75) 100%
-  );
+  background: linear-gradient(to bottom,
+      rgba(10, 25, 45, 0.35) 0%,
+      rgba(10, 25, 45, 0.75) 100%);
 }
 
 .page-hero__inner {
@@ -315,7 +311,7 @@
   font-weight: var(--weight-bold);
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.7);
+  color: rgba(255, 255, 255, 0.7);
   margin-bottom: var(--space-2);
 }
 
@@ -338,7 +334,7 @@
 }
 
 .breadcrumb a {
-  color: rgba(255,255,255,0.65);
+  color: rgba(255, 255, 255, 0.65);
   transition: color var(--ease-fast);
 }
 
@@ -347,11 +343,11 @@
 }
 
 .breadcrumb__sep {
-  color: rgba(255,255,255,0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .breadcrumb__current {
-  color: rgba(255,255,255,0.8);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 /* ===== Page Top Button ===== */
